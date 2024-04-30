@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUITeplateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlertView()
         }
     }
 }
