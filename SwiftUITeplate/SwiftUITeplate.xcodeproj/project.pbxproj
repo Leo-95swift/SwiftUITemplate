@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0170A4FB2BE2D43F00E7328D /* ProfileSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170A4FA2BE2D43F00E7328D /* ProfileSectionView.swift */; };
+		0170A4FD2BE2D45500E7328D /* SoftwareUpdateSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170A4FC2BE2D45500E7328D /* SoftwareUpdateSectionView.swift */; };
+		0170A4FF2BE2D46400E7328D /* ConnectionSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170A4FE2BE2D46400E7328D /* ConnectionSectionView.swift */; };
 		01C7125B2BE00D4400938BE5 /* SwiftUITeplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */; };
 		01C7125D2BE00D4400938BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7125C2BE00D4400938BE5 /* ContentView.swift */; };
 		01C7125F2BE00D4600938BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C7125E2BE00D4600938BE5 /* Assets.xcassets */; };
 		01C712622BE00D4600938BE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C712612BE00D4600938BE5 /* Preview Assets.xcassets */; };
+		01C787172BE2DE530071172E /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C787162BE2DE530071172E /* ToggleView.swift */; };
+		01C787192BE2DEAC0071172E /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C787182BE2DEAC0071172E /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0170A4FA2BE2D43F00E7328D /* ProfileSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionView.swift; sourceTree = "<group>"; };
+		0170A4FC2BE2D45500E7328D /* SoftwareUpdateSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateSectionView.swift; sourceTree = "<group>"; };
+		0170A4FE2BE2D46400E7328D /* ConnectionSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSectionView.swift; sourceTree = "<group>"; };
 		01C712572BE00D4400938BE5 /* SwiftUITeplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITeplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITeplateApp.swift; sourceTree = "<group>"; };
 		01C7125C2BE00D4400938BE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01C7125E2BE00D4600938BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C712612BE00D4600938BE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01C787162BE2DE530071172E /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		01C787182BE2DEAC0071172E /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0170A5002BE2DD9E00E7328D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01C787142BE2DE2D0071172E /* SectionViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0170A5012BE2DDAE00E7328D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */,
+				01C7125C2BE00D4400938BE5 /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0170A5022BE2DDC000E7328D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				01C7125E2BE00D4600938BE5 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		01C7124E2BE00D4400938BE5 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +86,10 @@
 		01C712592BE00D4400938BE5 /* SwiftUITeplate */ = {
 			isa = PBXGroup;
 			children = (
-				01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */,
-				01C7125C2BE00D4400938BE5 /* ContentView.swift */,
-				01C7125E2BE00D4600938BE5 /* Assets.xcassets */,
+				0170A5012BE2DDAE00E7328D /* Application */,
+				0170A5002BE2DD9E00E7328D /* Views */,
+				01C787152BE2DE400071172E /* Helpers */,
+				0170A5022BE2DDC000E7328D /* SupportingFiles */,
 				01C712602BE00D4600938BE5 /* Preview Content */,
 			);
 			path = SwiftUITeplate;
@@ -65,6 +101,25 @@
 				01C712612BE00D4600938BE5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01C787142BE2DE2D0071172E /* SectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				0170A4FA2BE2D43F00E7328D /* ProfileSectionView.swift */,
+				0170A4FC2BE2D45500E7328D /* SoftwareUpdateSectionView.swift */,
+				0170A4FE2BE2D46400E7328D /* ConnectionSectionView.swift */,
+			);
+			path = SectionViews;
+			sourceTree = "<group>";
+		};
+		01C787152BE2DE400071172E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				01C787162BE2DE530071172E /* ToggleView.swift */,
+				01C787182BE2DEAC0071172E /* PickerView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C7125D2BE00D4400938BE5 /* ContentView.swift in Sources */,
+				0170A4FD2BE2D45500E7328D /* SoftwareUpdateSectionView.swift in Sources */,
+				0170A4FB2BE2D43F00E7328D /* ProfileSectionView.swift in Sources */,
 				01C7125B2BE00D4400938BE5 /* SwiftUITeplateApp.swift in Sources */,
+				01C787172BE2DE530071172E /* ToggleView.swift in Sources */,
+				01C787192BE2DEAC0071172E /* PickerView.swift in Sources */,
+				0170A4FF2BE2D46400E7328D /* ConnectionSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
