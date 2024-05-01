@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0170A4F32BE17BEB00E7328D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0170A4F22BE17BEB00E7328D /* Colors.xcassets */; };
+		0170A4F82BE2BAD400E7328D /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170A4F72BE2BAD400E7328D /* CurrencyFormatter.swift */; };
 		01C7125B2BE00D4400938BE5 /* SwiftUITeplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */; };
 		01C7125D2BE00D4400938BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7125C2BE00D4400938BE5 /* ContentView.swift */; };
 		01C7125F2BE00D4600938BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C7125E2BE00D4600938BE5 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0170A4F22BE17BEB00E7328D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0170A4F72BE2BAD400E7328D /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		01C712572BE00D4400938BE5 /* SwiftUITeplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITeplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITeplateApp.swift; sourceTree = "<group>"; };
 		01C7125C2BE00D4400938BE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0170A4F12BE17BC300E7328D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0170A4F72BE2BAD400E7328D /* CurrencyFormatter.swift */,
+				01C7125E2BE00D4600938BE5 /* Assets.xcassets */,
+				0170A4F22BE17BEB00E7328D /* Colors.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		01C7124E2BE00D4400938BE5 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +67,7 @@
 			children = (
 				01C7125A2BE00D4400938BE5 /* SwiftUITeplateApp.swift */,
 				01C7125C2BE00D4400938BE5 /* ContentView.swift */,
-				01C7125E2BE00D4600938BE5 /* Assets.xcassets */,
+				0170A4F12BE17BC300E7328D /* SupportingFiles */,
 				01C712602BE00D4600938BE5 /* Preview Content */,
 			);
 			path = SwiftUITeplate;
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0170A4F32BE17BEB00E7328D /* Colors.xcassets in Resources */,
 				01C712622BE00D4600938BE5 /* Preview Assets.xcassets in Resources */,
 				01C7125F2BE00D4600938BE5 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C7125D2BE00D4400938BE5 /* ContentView.swift in Sources */,
+				0170A4F82BE2BAD400E7328D /* CurrencyFormatter.swift in Sources */,
 				01C7125B2BE00D4400938BE5 /* SwiftUITeplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
