@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - Constants
+    
+    enum Constants {
+            static let settings = "Настройки"
+    }
+    
+    // MARK: - Body
+
     var body: some View {
         NavigationView {
             Form {
@@ -15,7 +24,7 @@ struct ContentView: View {
                 SoftwareUpdateSectionView()
                 ConnectionSectionView()
             }
-            .navigationTitle("Настройки")
+            .navigationTitle(Constants.settings)
         }
     }
 }

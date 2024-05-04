@@ -12,9 +12,12 @@ struct ProfileSectionView: View {
     // MARK: - Constants
     
     enum Constants {
-            static let profileName = "Evgeny"
-            static let profileDescription = "Apple ID, iCloud, контент и покупки"
-            static let appleSuggestions = "Предложения Apple ID"
+        static let profileImageName = "profile"
+        static let numberThree = "3"
+        static let profileName = "Evgeny"
+        static let profileDescription = "Apple ID, iCloud, контент и покупки"
+        static let appleSuggestions = "Предложения Apple ID"
+
     }
     
     // MARK: - @State Private Properties
@@ -27,7 +30,7 @@ struct ProfileSectionView: View {
     var body: some View {
         Section {
             HStack {
-                Image("profile")
+                Image(Constants.profileImageName)
                 Picker(selection: $selectionProfile) {
                     ForEach(0..<settingsProfile.count) {
                         Text(settingsProfile[$0])
@@ -62,7 +65,7 @@ struct ProfileSectionView: View {
                         Spacer()
                         ZStack {
                             Circle().foregroundColor(.red).frame(width: 25)
-                            Text("3").foregroundStyle(.white)
+                            Text(Constants.numberThree).foregroundStyle(.white)
                         }
                     }
                 }.pickerStyle(.navigationLink)
